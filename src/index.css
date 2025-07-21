@@ -1,0 +1,22 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+body{
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+ 
+}
+*:not(i){
+font-family: 'Josefin Sans', sans-serif;
+}
+

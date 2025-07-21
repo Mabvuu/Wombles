@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+
+
+*:not(i){
+  font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  .about-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; 
+    padding: 20px; 
+    padding-bottom: 4vh;
+  }  
+  
+  .about-section .left-side {
+    flex: 1;
+    padding-right: 20px; /* Add padding to the right side of the left content */
+  }
+  
+  .about-section .right-side {
+    flex: 1;
+  }
+  
+  
+  .left-side h2{
+    text-align: center;
+    font-size: 4vh;
+  }
+ .left-side p{
+    text-align: center;
+    font-size: 2.2vh;
+  }
+  
+  
+  
+  .left-side .text-content, .left-side img{
+    margin-bottom: 10px;
+  }
+  
+  img {
+    width: 100%; 
+    height: auto; 
+  }
+ .left-side img{
+    max-width: 80%;
+    align-items: center;
+    margin-left: 50px;
+  }
+ .right-side img{
+    max-width: 100%;
+  height: auto;
+  }
+ .right-side{
+    width: 50%;
+    float: right;
+    padding-top: 120px;
+  }
+  .image1{
+    max-width: 60%;
+   height: auto;
+  display: none;
+  margin-left: 50px;
+  }
+  @media screen and (max-width: 1200px){
+    
+      .left-side h2{
+        text-align: center;
+        font-size: 3vh;
+
+      }
+      .left-side p{
+        text-align: center;
+        font-size: 2.2vh;
+      }
+      .image1{
+        max-width: 60%;
+      height: auto;
+      display: block;
+      }
+      .image2{
+        display: none;
+      }
+      .left-side img{
+        max-width: 80%;
+        align-items: center;
+      }
+
+      .right-side{
+        display: none;
+      }
+      .left-side{
+        width: 100%;
+      }
+  }
+
+
+
+
+
+
+
+
+
+  /*MENU TEASER*/
+  .menu-teaser {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 2vh;
+  }
+  
+  .part {
+    flex-basis: calc(33.33% - 20px); 
+    margin-bottom: 20px; 
+  }
+  
+  button {
+    margin-top: 20px; 
+    margin-bottom: 50px;
+  }
+  .menu-teaser h3{
+    color: #526534;
+    font-size: 2.1rem;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .menu-teaser h2{
+  font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .menu-teaser h4{
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .menu-teaser p{
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .menu-button{
+    display: block;
+    padding: 10px 20px;
+    background-color: #526534;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+    text-transform: uppercase;
+  font-size: 1.8rem;
+  }
+  .menu-button:hover{
+    background-color: #fff;
+    color: #526534;
+  }
+  @media screen and (max-width: 1200px){
+    .menu-teaser {
+      flex-direction: column; 
+      width: 100%;
+    }
+    .part{
+      width: 100%;
+    }
+    .menu-teaser h3{
+      font-size: 1.8rem;
+    
+    }
+    .menu-teaser h2{
+    font-size: 2.6rem;
+      
+    }
+    .menu-teaser h4{
+      font-size: 1.4rem;
+     
+    }
+    .menu-teaser p{
+      font-size: 1rem;
+     
+    }
+  
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+  /*TEASE PAGE*/
+  
+
+.tease {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; 
+  padding: 20px; 
+  padding-bottom: 5vh;
+} 
+.tease h1{
+  padding-top: 270px;
+  font-size: 2.3rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+.tease p{
+  font-size: 3vh;
+  margin-left: 20px;
+  color: #fff;
+  text-decoration:  underline  #526534;
+  text-underline-offset:  10px;
+}
+
+.parttease {
+  flex-basis: calc(33.33% - 20px);
+  height: 200px; 
+}
+
+.part1 {
+  background-image: url('21.JPG');
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  display: inline-block;
+  width: 33%;
+  transition: transform 0.3s ease;
+}
+
+.part2 {
+  background-image: url('14.JPG');
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  display: inline-block;
+  width: 33%;
+  transition: transform 0.3s ease;
+}
+
+.part3 {
+  background-image: url('15.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  display: inline-block;
+  width: 33%;
+transition: transform 0.3s ease;
+}
+
+.part1:hover,
+.part2:hover,
+.part3:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1200px)  {
+  .tease {
+    flex-direction: column; 
+    width: 100%;
+    flex-basis: 100%;
+    padding-bottom: 5vh;
+  }
+
+  .parttease {
+    flex-basis: 100%; 
+    height: auto; 
+  }
+
+  .part1, .part2, .part3{
+    width: 100%;
+  }
+  
+}
+
+
